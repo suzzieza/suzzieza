@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "suzzieza_backend": {
+      "declarations": {
+        "node_compatibility": true
+      },
+      "main": "src/suzzieza_backend/main.mo",
+      "type": "motoko"
+    },
+    "suzzieza_frontend": {
+      "dependencies": [
+        "suzzieza_backend"
+      ],
+      "source": [
+        "src/suzzieza_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "suzzieza_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
